@@ -60,7 +60,9 @@
             this.btnShowAllFlight = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.btnEditCustomer = new System.Windows.Forms.Button();
-            this.txtEditCustomer = new System.Windows.Forms.TextBox();
+            this.txtCustomerId = new System.Windows.Forms.TextBox();
+            this.btnEditFlight = new System.Windows.Forms.Button();
+            this.txtFlightId = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgCustomer)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgFlights)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
@@ -226,7 +228,7 @@
             // 
             // splitContainer1.Panel1
             // 
-            this.splitContainer1.Panel1.Controls.Add(this.txtEditCustomer);
+            this.splitContainer1.Panel1.Controls.Add(this.txtCustomerId);
             this.splitContainer1.Panel1.Controls.Add(this.btnEditCustomer);
             this.splitContainer1.Panel1.Controls.Add(this.button1);
             this.splitContainer1.Panel1.Controls.Add(this.btnDeleteCustomer);
@@ -244,6 +246,8 @@
             // 
             // splitContainer1.Panel2
             // 
+            this.splitContainer1.Panel2.Controls.Add(this.txtFlightId);
+            this.splitContainer1.Panel2.Controls.Add(this.btnEditFlight);
             this.splitContainer1.Panel2.Controls.Add(this.btnShowAllFlight);
             this.splitContainer1.Panel2.Controls.Add(this.btnDeleteFlight);
             this.splitContainer1.Panel2.Controls.Add(this.txtFlightToDelete);
@@ -292,7 +296,7 @@
             // 
             // txtFindCustomer
             // 
-            this.txtFindCustomer.Location = new System.Drawing.Point(104, 140);
+            this.txtFindCustomer.Location = new System.Drawing.Point(67, 140);
             this.txtFindCustomer.Name = "txtFindCustomer";
             this.txtFindCustomer.Size = new System.Drawing.Size(142, 20);
             this.txtFindCustomer.TabIndex = 20;
@@ -300,7 +304,7 @@
             // btnCustomerSearch
             // 
             this.btnCustomerSearch.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.btnCustomerSearch.Location = new System.Drawing.Point(272, 140);
+            this.btnCustomerSearch.Location = new System.Drawing.Point(226, 138);
             this.btnCustomerSearch.Name = "btnCustomerSearch";
             this.btnCustomerSearch.Size = new System.Drawing.Size(75, 23);
             this.btnCustomerSearch.TabIndex = 21;
@@ -386,19 +390,37 @@
             // 
             // btnEditCustomer
             // 
-            this.btnEditCustomer.Location = new System.Drawing.Point(270, 229);
+            this.btnEditCustomer.Location = new System.Drawing.Point(317, 138);
             this.btnEditCustomer.Name = "btnEditCustomer";
             this.btnEditCustomer.Size = new System.Drawing.Size(75, 23);
             this.btnEditCustomer.TabIndex = 28;
             this.btnEditCustomer.Text = "Edit";
             this.btnEditCustomer.UseVisualStyleBackColor = true;
+            this.btnEditCustomer.Click += new System.EventHandler(this.btnEditCustomer_Click);
             // 
-            // txtEditCustomer
+            // txtCustomerId
             // 
-            this.txtEditCustomer.Location = new System.Drawing.Point(105, 229);
-            this.txtEditCustomer.Name = "txtEditCustomer";
-            this.txtEditCustomer.Size = new System.Drawing.Size(141, 20);
-            this.txtEditCustomer.TabIndex = 29;
+            this.txtCustomerId.Location = new System.Drawing.Point(238, 17);
+            this.txtCustomerId.Name = "txtCustomerId";
+            this.txtCustomerId.Size = new System.Drawing.Size(121, 20);
+            this.txtCustomerId.TabIndex = 30;
+            // 
+            // btnEditFlight
+            // 
+            this.btnEditFlight.Location = new System.Drawing.Point(531, 140);
+            this.btnEditFlight.Name = "btnEditFlight";
+            this.btnEditFlight.Size = new System.Drawing.Size(75, 23);
+            this.btnEditFlight.TabIndex = 29;
+            this.btnEditFlight.Text = "Edit";
+            this.btnEditFlight.UseVisualStyleBackColor = true;
+            this.btnEditFlight.Click += new System.EventHandler(this.btnEditFlight_Click);
+            // 
+            // txtFlightId
+            // 
+            this.txtFlightId.Location = new System.Drawing.Point(631, 17);
+            this.txtFlightId.Name = "txtFlightId";
+            this.txtFlightId.Size = new System.Drawing.Size(121, 20);
+            this.txtFlightId.TabIndex = 31;
             // 
             // CustomerView
             // 
@@ -453,7 +475,9 @@
         private System.Windows.Forms.TextBox txtFlightToDelete;
         private System.Windows.Forms.Button btnShowAllFlight;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox txtEditCustomer;
         private System.Windows.Forms.Button btnEditCustomer;
+        private System.Windows.Forms.TextBox txtCustomerId;
+        private System.Windows.Forms.Button btnEditFlight;
+        private System.Windows.Forms.TextBox txtFlightId;
     }
 }

@@ -25,7 +25,7 @@ namespace Assignment8.Controller
 
         public bool EditFlight(Flight flight)
         {
-            return EditFlight(flight);
+            return data.EditFlight(flight);
         }
 
         public bool RegisterFlight(Flight flight)

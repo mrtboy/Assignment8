@@ -78,7 +78,7 @@ namespace Assignment8.Repository
                 DbConnection db = DbConnection.createConnection();
                 string query = 
                     String.Format("SELECT Customer.Id, Customer.Name, Flight.Airline, " +
-                    "Flight.Origin, Flight.Destination,Flight.Date  FROM Customer" +
+                    "Flight.Origin, Flight.Destination,Flight.Date, Flight.Id  FROM Customer" +
                     " JOIN Flight ON Customer.FlightId = Flight.Id WHERE Flight.Id = {0}", id);
 
                 return db.ExecuteQuery(query);
